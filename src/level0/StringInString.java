@@ -1,5 +1,6 @@
-public class Main {
+package level0;
 
+public class StringInString {
     // 조건1. 문자열 str1과 str2이 주어짐
     // 조건2. str1안에 str2가 있다면 1을 없다면 2를 return
 
@@ -12,6 +13,7 @@ public class Main {
         return answer;
     }
 
+    //Test
     public static void main(String[] args) {
         String str1 = "abcdefg";
         String str2 = "bd";
