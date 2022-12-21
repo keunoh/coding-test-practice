@@ -1,6 +1,8 @@
+package level0;
+
 import java.util.Arrays;
 
-public class Main {
+public class DeleteIfNotMultiple {
 
     //조건1. 정수 n과 정수 배열 numlist가 매개변수로 주어짐
     //조건2. numlist에서 n의 배수가 아닌 수들을 제거한 배열 return
@@ -43,5 +45,4 @@ public class Main {
         String result = Arrays.toString(myArr);
         System.out.println("result = " + result);
     }
-
 }
