@@ -1,18 +1,12 @@
-import java.util.Arrays;
+package level0;
 
-public class Main {
+public class MiddleValue {
 
-    // 배열을 정렬한다.
-    // 어차피 홀 수로 들어오니 가운데 값 인덱스를 잡아준다.
+    public int solution(int[] array) {
+        int index = array.length / 2;
+        int[] answer = bubbleSort(array);
 
-    public static void main(String[] args) {
-        int[] arr = {3, 5, 1, 15, 7};
-
-        int index = arr.length / 2;
-        int[] result = bubbleSort(arr);
-
-        System.out.println("result[index] = " + result[index]);
-        
+        return answer[index];
     }
 
     public static int[] bubbleSort(int[] arr) {
@@ -28,5 +22,4 @@ public class Main {
         }
         return arr;
     }
-
 }
