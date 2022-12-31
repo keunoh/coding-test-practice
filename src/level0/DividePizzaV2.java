@@ -1,15 +1,8 @@
+package level0;
 
-public class Main {
+public class DividePizzaV2 {
 
-    //1. 피자를 여섯 조각으로 잘라 준다.
-    //2. 피자를 나눠먹을 사람 n명이 주어진다.
-    //3. n명이 주문한 피자를 남기지 않고 모두 같은 수의 피자 조각을 먹어야 한다.
-    //4. 최소 몇 판 먹어야하는지 return
-
-    public static void main(String[] args) {
-
-
-        int n = 10;
+    public int solution(int n) {
         int pizza = 1;
         int totalPieceOfPizza = pizza * 6;
 
@@ -22,7 +15,6 @@ public class Main {
                 totalPieceOfPizza = pizza * 6;
             }
         }
-
-        System.out.println("피자 개수 : " + pizza);
+        return pizza;
     }
 }
